@@ -13,7 +13,7 @@ app = Flask(__name__)
 #Decorador para definir la ruta
 @app.route('/index')
 
-#Funciuon para llamar a la pagina index
+#Función para llamar a la página index
 def index():
     return render_template('index.html')
 
