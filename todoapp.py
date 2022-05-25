@@ -6,12 +6,17 @@ from flask import Flask, render_template;
 #Intanciar la aplicacion
 app = Flask(__name__)
 
+#Creamos
 #Controlador de la ruta ('/')
 @app.route('/')
 
+#Decorador para definir la ruta
+@app.route('/index')
+
 #Funciuon para llamar a la pagina index
-def principal():
+def index():
     return render_template('index.html')
+
 
 
 
