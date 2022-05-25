@@ -22,35 +22,58 @@
              <h1>TO-DO TAREAS PENDIENTES</h1>
          </center>
      </header>
+
+     <!--Imagen-->
+     <div class="imagen">
+         <img src="Img\todo-lista.jpg" width="400" height="350">
+     </div>
+
+     <!--Lista de Tareas-->
      <div class="listaTa">
          <h3>Lista de tareas pendientes</h3>
          <ul class="listaTareas">
-             <li><b>Tender la cama a las 5:05 am</b></li>
-             <li><b>Estar lista para ir a la Universidad a las 5:40 am</b></li>
-             <li><b>Ir a dejar a Valentina a la escuela a las 12:45 am</b></li>
-             <li><b>Entregar el informe para el abogado a las 13:30 pm</b></li>
-             <li><b>Ir a recoger a Valentina de la escuela a las 18:10 pm</b></li>
-             <li><b>Realizar las tareas de la Universidad a las 7:50 pm</b></li>
-            
+             <p>
+                 <li><b><input type="checkbox" value="lT" id="tlist"> Tender la cama a las 5:05 am</b></li>
+             </p>
+             <p>
+                 <li><b><input type="checkbox" value="lT" id="tlist"> Estar lista para ir a la Universidad a las 5:40
+                         am</b></li>
+             </p>
+             <p>
+                 <li><b><input type="checkbox" value="lT" id="tlist"> Ir a dejar a Valentina a la escuela a las 12:45
+                         am</b></li>
+             </p>
+             <p>
+                 <li><b><input type="checkbox" value="lT" id="tlist"> Entregar el informe para el abogado a las 13:30
+                         pm</b></li>
+             </p>
+             <p>
+                 <li><b><input type="checkbox" value="lT" id="tlist"> Ir a recoger a Valentina de la escuela a las 18:10
+                         pm</b></li>
+             </p>
+             <p>
+                 <li><b><input type="checkbox" value="lT" id="tlist"> Realizar las tareas de la Universidad a las 7:50
+                         pm</b></li>
+             </p>
+
          </ul>
      </div>
-     <!--Secciones del formulario-->
+     <!--Sección del formulario-->
      <section class="contenedorForm">
-
          <form id="nuevaTarea">
              <p><input type="text" id="nuevaT" placeholder="Nueva Tarea"></p>
+             <p><input type="email" name="email" id="email" placeholder="Ingrese su Correo"></p>
              <p> <select>
                      <option disabled selected="">Prioridad de la Tarea</option>
                      <option>Alta</option>
                      <option>Media</option>
                      <option>Baja</option>
                  </select></p>
-
-
              <button>Agregar</button>
 
          </form>
      </section>
+
 
 
 
@@ -94,6 +117,10 @@
 
 
  <style>
+     body {
+         background-color: rgb(247, 194, 240);
+     }
+
      .header {
          z-index: 100;
          background: rgb(170, 29, 158);
@@ -105,14 +132,22 @@
          right: 0;
      }
 
-     .listaTa {
-        padding-left: 3rem;
+     .imagen {
+         padding-left: 3rem;
          padding-right: 10rem;
          padding-top: 10rem;
          padding-bottom: 1rem;
-        margin: auto;
+         margin: auto;
      }
 
+     .listaTa {
+         padding-left: 3rem;
+         padding-right: 10rem;
+         padding-top: 1rem;
+         padding-bottom: 1rem;
+         margin: auto;
+     }
+    
      .contenedorForm {
          padding-left: 3rem;
          padding-right: 10rem;
