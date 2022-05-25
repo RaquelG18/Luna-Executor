@@ -1,25 +1,32 @@
-from glob import escape
-from logging import exception
-from os import abort
-from flask import Flask, render_template;
 
-#Intanciar la aplicacion
-app = Flask(__name__)
+from flask import Flask, render_template_string
+from flask import render_template
 
-#Creamos
-#Controlador de la ruta ('/')
+# Intanciar la aplicacion
+app = Flask(__name__, template_folder='template')
+
+# Creamos
+# Controlador de la ruta ('/')
+
+
 @app.route('/')
-
-#Decorador para definir la ruta
-@app.route('/index')
-
-#Función para llamar a la página index
+# Función para llamar a la página index
 def index():
-    return render_template('index.html')
+    return render_template("index.html")
+
+# @app.route('/enviar')
+# def enviar_form():
+
+# Controlador enviar
+# @app.route('/enviar')
+# def enviar_form():
 
 
+# Controlador borrar
+# @app.route('/borrar')
+# def borrar_form():
 
 
-#Main del programa
-if __name__ == '__main__':
-    app.run(debug=True) #Reiniciar el servidor
+# Main del programa
+# if __name__ == '__main__':
+app.run(debug=True)  # Reiniciar el servidor

@@ -25,7 +25,8 @@
 
      <!--Imagen-->
      <div class="imagen">
-         <img src="Img\todo-lista.jpg" width="400" height="350">
+         <img src="https://static.vecteezy.com/system/resources/previews/003/679/800/large_2x/to-do-list-concept-people-checking-completed-tasks-and-prioritizing-tasks-in-to-do-list-illustration-flat-vector.jpg"
+         alt="#" width="400" height="350">
      </div>
 
      <!--Lista de Tareas-->
@@ -60,7 +61,7 @@
      </div>
      <!--Sección del formulario-->
      <section class="contenedorForm">
-         <form id="nuevaTarea">
+         <form method="post" id="nuevaTarea">
              <p><input type="text" id="nuevaT" placeholder="Nueva Tarea"></p>
              <p><input type="email" name="email" id="email" placeholder="Ingrese su Correo"></p>
              <p> <select>
@@ -69,7 +70,9 @@
                      <option>Media</option>
                      <option>Baja</option>
                  </select></p>
-             <button>Agregar</button>
+             <input type="submit" id="enviar" value="Agregar">
+             <button id="borrar">Borrar</button>
+
 
          </form>
      </section>
