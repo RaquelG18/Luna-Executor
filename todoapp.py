@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template_string
+from flask import Flask, request, redirect, url_for
 from flask import render_template
 
 # Intanciar la aplicacion
@@ -14,19 +14,18 @@ app = Flask(__name__, template_folder='template')
 def index():
     return render_template("index.html")
 
-# @app.route('/enviar')
-# def enviar_form():
 
-# Controlador enviar
-# @app.route('/enviar')
-# def enviar_form():
+@app.route('/enviar')
+def enviar():
+    return render_template("index.html")
 
+    # Controlador borrar
+@app.route('/borrar/<tareas>')
+def borrar_form(tareas):
+    return render_template('index.html')
 
-# Controlador borrar
-# @app.route('/borrar')
-# def borrar_form():
+        # Main del programa
+        # if __name__ == '__main__':
 
-
-# Main del programa
-# if __name__ == '__main__':
 app.run(debug=True)  # Reiniciar el servidor
+
