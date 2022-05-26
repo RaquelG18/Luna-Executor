@@ -1,13 +1,11 @@
 
 from flask import Flask, request, redirect, url_for
 from flask import render_template
-from flask_bootstrap import bootstrap
+#from flask_bootstrap import bootstrap
 
 
 # Intanciar la aplicacion
 app = Flask(__name__, template_folder='template')
-
-bootstrap = bootstrap(app)
 
 # Creamos
 # Controlador 1 de la ruta ('/')
@@ -22,8 +20,8 @@ def enviar():
     return render_template("index.html")
 
     # Controlador 3 de la ruta /borrar
-@app.route('/borrar/<tareas>')
-def borrar_form(tareas):
+@app.route('/borrar')
+def borrar_form():
     return render_template('index.html')
 
         # Main del programa
