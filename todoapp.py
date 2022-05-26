@@ -1,9 +1,13 @@
 
 from flask import Flask, request, redirect, url_for
 from flask import render_template
+from flask_bootstrap import bootstrap
+
 
 # Intanciar la aplicacion
 app = Flask(__name__, template_folder='template')
+
+bootstrap = bootstrap(app)
 
 # Creamos
 # Controlador 1 de la ruta ('/')
