@@ -1,5 +1,7 @@
 
 from flask import Flask, request, redirect, url_for
+
+#Importamos flask
 from flask import render_template
 #from flask_bootstrap import bootstrap
 
@@ -19,7 +21,7 @@ def index():
 def enviar():
     return render_template("index.html")
 
-    # Controlador 3 de la ruta /borrar
+# Controlador 3 de la ruta /borrar
 @app.route('/borrar')
 def borrar_form():
     return render_template('index.html')
